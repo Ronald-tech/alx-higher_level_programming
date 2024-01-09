@@ -27,5 +27,5 @@ int aux_palind(listint_t **head, listint_t *end)
 		*head = (*head)->next;
 		return (1);
 	}
-	return(0);
+	return (0);
 }
