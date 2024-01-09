@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * palidrom - recursive palind or not
+ * is_palidrome - recursive palind or not
  * @head: head list
  * Return: 0 if it is not a palidrome
  * 1 if it is a palidrome
