@@ -32,10 +32,8 @@ class Square:
         """Get/set the current position of the square."""
         return (self.__position)
 
-    def position(self, value):
-
     @position.setter
-    def position(self, alue):
+    def position(self, value):
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
@@ -55,6 +53,6 @@ class Square:
 
         [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
-            [print(" ", end="") for j in range(0, self.__position)[0]]
+            [print(" ", end="") for j in range(0, self.__position[0])]
             [print("#", end="") for j in range(0, self.__size)]
-	    print("")
+            print("")
