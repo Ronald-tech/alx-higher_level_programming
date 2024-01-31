@@ -6,10 +6,10 @@ Defines class Rectangle
 
 class Rectangle:
     """Representation of a Rectangle"""
-    def __init__(self, width=0, hieght=0):
+    def __init__(self, width=0, height=0):
         """Initializes the Rectangle"""
-    self.hieght = hieght
-    self.width = width
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
@@ -26,15 +26,15 @@ class Rectangle:
         self.__width = value
 
     @property
-    def hieght(self):
-        """getter for the private instance attribute hieght"""
-        return self.__hiegtht
+    def height(self):
+        """getter for the private instance attribute height"""
+        return self.__height
 
-    @hieght.setter
-    def hieght(self, value):
-        """setter for the private instance attribute hieght"""
+    @height.setter
+    def height(self, value):
+        """setter for the private instance attribute height"""
         if type(value) is not int:
-            raise TypeError("hieght must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("hieght must be >= 0")
-        self.__hieght = value
+            raise ValueError("height must be >= 0")
+        self.__height = value
