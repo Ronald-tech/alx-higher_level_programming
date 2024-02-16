@@ -19,7 +19,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        '''Json is converting dictionary to be rightly longer'''
+        '''Jsonifies a dictionary so it's quite rightly and longer'''
         if list_dictionaries is None or not list_dictionaries:
             return "[]"
         else:
@@ -34,7 +34,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        '''Saves the json object to file'''
+        '''Saves the jsonified object to file'''
         if list_objs is not None:
             list_objs = [o.to_dictionary() for o in list_objs]
         with open("{}.json".format(cls.__name__), "w", encoding="utf-8") as f:
@@ -66,7 +66,7 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        '''Saves object csv file'''
+        '''Saves object to csv file'''
         from models.rectangle import Rectangle
         from models.square import Square
         if list_objs is not None:
@@ -115,11 +115,11 @@ class Base:
             t.pendown()
             t.setpos((i.x + t.pos()[0], i.y - t.pos()[1]))
             t.pensize(10)
-            t.foward(i.width)
+            t.forward(i.width)
             t.left(90)
             t.foward(i.height)
             t.left(90)
-            t.foward(i.width)
+            t.forward(i.width)
             t.left(90)
             t.foward(i.height)
             t.left(90)
