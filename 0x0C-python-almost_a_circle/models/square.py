@@ -10,7 +10,7 @@ class Square(Rectangle):
         '''Constructor'''
         super().__init__(size, size, x, y, id)
 
-    def __str(self):
+    def __str__(self):
         '''Returns string info about this square'''
         return '[{}] ({}) {}/{} - {}'.\
             format(type(self).__name__, self.id, self.x, self.y, self.width)
