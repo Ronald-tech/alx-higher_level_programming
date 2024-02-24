@@ -4,12 +4,13 @@
 
 def pascal_triangle(n):
     '''Represent Pascal's Trinagle of size n.
-    Returns a list of integer representing the triangle.
+    Returns a list of integers representing the triangle.
     '''
     if n <= 0:
         return []
+
     triangles = [[1]]
-    while len[triangles] != n:
+    while len(triangles) != n:
         tri = triangles[-1]
         tmp = [1]
         for i in range(len(tri) - 1):
