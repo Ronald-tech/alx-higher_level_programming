@@ -1,1 +1,1 @@
-SHOW Databases;
+SELECT * FROM Database;
